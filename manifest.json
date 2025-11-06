@@ -1,0 +1,11 @@
+{
+	"id": "copy-indented-code-blocks",
+	"name": "Copy Indented Code Blocks",
+	"version": "0.0.10",
+	"minAppVersion": "0.15.0",
+	"description": "Removes leading indentation when copying from indented code blocks",
+	"author": "You",
+	"authorUrl": "",
+	"fundingUrl": "",
+	"isDesktopOnly": false
+}
