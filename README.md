@@ -67,10 +67,10 @@ foo
 
 ### Indented code block:
 ...even with text directly above it (yes, even indented text)
-
 	```
 	boo
 	```
+*(it looks a bit different on Obsidian - here on Gthub, it doesn't even want to line break.)*
 
 ### Indented code block right after a list item:
 - List item
