@@ -33,7 +33,6 @@ I hope this adds some ease to the document organization you want!
 **Before (indented code block):**
 
 - A list item\*
-
 ````
     ```javascript
     function hello() {
@@ -43,7 +42,6 @@ I hope this adds some ease to the document organization you want!
 ````
 
 **What you'll paste in default Obsidian:**
-
 ```
     function hello() {
         console.log("Hello, world!");
@@ -51,7 +49,6 @@ I hope this adds some ease to the document organization you want!
 ```
 
 **What you'll paste with this plugin:**
-
 ```
 function hello() {
     console.log("Hello, world!");
@@ -63,40 +60,33 @@ function hello() {
 Indented code blocks _only_ seem to render as such when _directly underneath_ a list item (bullet, checkbox, number). If simply indented, they won't. For example:
 
 Normal code block:
-
 ```
 foo
 ```
 
 Indented code block, even with text directly above it (yes, even indented text):
-`
+	```
 	boo
-	`
+	```
 
 - Indented code block right after a list item:
-  `
+	```
 	woohoo
-	`
-  Numbers and checkboxes work too. In fact, it even seems to work even if there are blank empty unindented newlines between the list item and the indented code block. (Since folding code blocks inside lists is the use case I needed this for, I love that this native Obsidian functionality makes it even more flexible for that.)
+	```
+Numbers and checkboxes work too. In fact, it even seems to work even if there are blank empty unindented newlines between the list item and the indented code block. (Since folding code blocks inside lists is the use case I needed this for, I love that this native Obsidian functionality makes it even more flexible for that.)
 
 ## Installation
 
 ### From GitHub
-1. Download the latest release
-2. Extract the `dist` folder contents to your vault's `.obsidian/plugins/copy-indented-code-blocks/` directory
+1. Either download the latest release, or extract the `dist` folder contents
+2. Put `main.js` and `manifest.json` in an `.obsidian/plugins/copy-indented-code-blocks/` directory in your vault
 3. Reload Obsidian
 4. Enable "Copy Indented Code Blocks" in Settings > Community plugins
 
-### Manual Installation
-1. Copy `main.js` and `manifest.json` from the `dist` folder to your vault's `.obsidian/plugins/copy-indented-code-blocks/` directory
-2. Reload Obsidian
-3. Enable the plugin in Settings > Community plugins
-
-## Development
+### Via the BRAT plugin
+Copy this repo's URL into the plugin and enjoy!
 
 ### Building from Source
-
-To build the plugin from source:
 
 ```bash
 npm install
@@ -104,21 +94,3 @@ npm run build
 ```
 
 The built files will be in the `dist/` folder.
-
-### Repository Structure
-
-- `main.ts` - Main plugin source code
-- `manifest.json` - Plugin manifest
-- `package.json` - Node.js dependencies and scripts
-- `esbuild.config.mjs` - Build configuration
-- `tsconfig.json` - TypeScript configuration
-- `dist/` - Built plugin files (generated)
-- `test.js` - Test script for indentation logic
-
-### Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
