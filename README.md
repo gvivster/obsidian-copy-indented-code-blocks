@@ -59,17 +59,20 @@ function hello() {
 
 Indented code blocks _only_ seem to render as such when _directly underneath_ a list item (bullet, checkbox, number). If simply indented, they won't. For example:
 
-Normal code block:
+### Normal code block:
+Text
 ```
 foo
 ```
 
-Indented code block, even with text directly above it (yes, even indented text):
+### Indented code block:
+...even with text directly above it (yes, even indented text)
 	```
 	boo
 	```
 
-- Indented code block right after a list item:
+### Indented code block right after a list item:
+- List item
 	```
 	woohoo
 	```
