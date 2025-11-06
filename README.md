@@ -81,15 +81,44 @@ Indented code block, even with text directly above it (yes, even indented text):
 
 ## Installation
 
-1. Copy the plugin files to your Obsidian vault's `.obsidian/plugins/copy-code-properly/` directory
+### From GitHub
+1. Download the latest release
+2. Extract the `dist` folder contents to your vault's `.obsidian/plugins/copy-indented-code-blocks/` directory
+3. Reload Obsidian
+4. Enable "Copy Indented Code Blocks" in Settings > Community plugins
+
+### Manual Installation
+1. Copy `main.js` and `manifest.json` from the `dist` folder to your vault's `.obsidian/plugins/copy-indented-code-blocks/` directory
 2. Reload Obsidian
 3. Enable the plugin in Settings > Community plugins
 
 ## Development
 
-To build the plugin:
+### Building from Source
+
+To build the plugin from source:
 
 ```bash
 npm install
 npm run build
 ```
+
+The built files will be in the `dist/` folder.
+
+### Repository Structure
+
+- `main.ts` - Main plugin source code
+- `manifest.json` - Plugin manifest
+- `package.json` - Node.js dependencies and scripts
+- `esbuild.config.mjs` - Build configuration
+- `tsconfig.json` - TypeScript configuration
+- `dist/` - Built plugin files (generated)
+- `test.js` - Test script for indentation logic
+
+### Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
