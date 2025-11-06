@@ -67,6 +67,7 @@ foo
 
 ### Indented code block:
 ...even with text directly above it (yes, even indented text)
+
 	```
 	boo
 	```
