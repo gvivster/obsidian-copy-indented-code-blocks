@@ -68,14 +68,14 @@ foo
 ### Indented code block:
 ...even with text directly above it (yes, even indented text)
 	```
-	boo
+	bar
 	```
 *(it looks a bit different on Obsidian - here on Gthub, it doesn't even want to line break.)*
 
 ### Indented code block right after a list item:
 - List item
 	```
-	woohoo
+	foo bar
 	```
 Numbers and checkboxes work too. In fact, it even seems to work even if there are blank empty unindented newlines between the list item and the indented code block. (Since folding code blocks inside lists is the use case I needed this for, I love that this native Obsidian functionality makes it even more flexible for that.)
 
